@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">IP Table</h1>
+
+        <div class="form-section">
+            <form id="ipForm" class="ip-form">
+                <div class="form-group">
+                    <input type="text" id="ipInput" placeholder="IP" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="maskInput" placeholder="Mask" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <select id="versionInput" class="form-input" required>
+                        <option value="">Version</option>
+                        <option value="IPv4">IPv4</option>
+                        <option value="IPv6">IPv6</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-add">Add</button>
+            </form>
+        </div>
+
+        <div class="table-section">
+            <table class="ip-table">
+                <thead>
+                    <tr>
+                        <th>IP</th>
+                        <th>Mask</th>
+                        <th>Version</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+            <p id="emptyMessage" class="empty-message">Nenhum IP adicionado ainda.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+{
+    "name": "web-api-utils",
+    "version": "1.0.0",
+    "description": "API com utilitários de processamento de texto e números",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "keywords": [
+        "api",
+        "utilitarios",
+        "texto",
+        "numeros"
+    ],
+    "author": "",
+    "license": "MIT"
+}
